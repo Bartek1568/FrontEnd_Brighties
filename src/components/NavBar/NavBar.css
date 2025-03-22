@@ -11,15 +11,17 @@
   z-index: 1000;
 }
 
+/* Kontener na navbar */
 .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between;  /* Logo po lewej, napisy po prawej */
+  align-items: center;  /* Wyrównanie elementów w poziomie */
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;  /* Dodanie przestrzeni z lewej i prawej strony */
 }
 
-/* Stylizacja logo */
+/* Logo */
 .logo {
   width: 100px;
   height: auto;
@@ -36,7 +38,7 @@
 .nav-links li {
   margin: 0 15px;
   display: flex;
-  align-items: center; /* Wyrównanie ikon i tekstu */
+  align-items: center;
 }
 
 .nav-links a {
@@ -60,10 +62,10 @@
   position: absolute;
   left: 0;
   bottom: -5px;
-  width: 100%;
+  width: 0;
   height: 2px;
   background: cyan;
-  transform: scaleX(0);
+  transform: translateX(-50%);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -91,7 +93,20 @@
   width: 30px;
   height: 3px;
   background: white;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Animacja hamburgera do 'X' */
+.open-bar1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.open-bar2 {
+  opacity: 0;
+}
+
+.open-bar3 {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* RESPONSYWNOŚĆ */
@@ -100,6 +115,7 @@
     display: flex;
   }
 
+  /* Animacja pojawiania się menu */
   .nav-links {
     position: absolute;
     top: 100%;
@@ -108,15 +124,16 @@
     background: #333;
     flex-direction: column;
     align-items: center;
-    max-height: 0;
     opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    pointer-events: none;
   }
 
   .nav-links.open {
-    max-height: 300px;
     opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .nav-links li {
@@ -127,8 +144,8 @@
   }
 
   .nav-links a {
-    display: block;
+    display: inline-block;
     width: 100%;
-    padding: 15px 0;
+    padding: 10px 0;
   }
 }

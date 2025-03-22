@@ -1,0 +1,43 @@
+/* Stylizacja głównej treści strony */
+.main-content {
+    padding: 2rem;  /* Dodanie przestrzeni wewnętrznej */
+    background-color: #f4f4f4;  /* Jasnoszare tło */
+    flex: 1;  /* Zapewnia, że sekcja główna zajmuje całą dostępną przestrzeń */
+    max-width: 1200px;  /* Ograniczenie szerokości */
+    margin: 0 auto;  /* Wyśrodkowanie */
+    margin-top: 150px;  /* Dodanie marginesu na wysokość navbaru (dostosuj w zależności od wysokości navbaru) */
+    margin-bottom: 150px;
+}
+
+
+.main-content h1,
+.main-content h2 {
+    color: #333;  /* Kolor tekstu dla nagłówków */
+}
+
+.main-content p {
+    color: #555;  /* Kolor tekstu dla paragrafów */
+    line-height: 1.6;  /* Zwiększona wysokość linii dla lepszej czytelności */
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.main-content .section {
+    margin-bottom: 3rem;  /* Odstęp pomiędzy sekcjami */
+}
+
+.main-content .cta-button {
+    background-color: #333;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.main-content .cta-button:hover {
+    background-color: #555;  /* Kolor przy hover */
+}

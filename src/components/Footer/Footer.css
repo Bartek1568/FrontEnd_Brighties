@@ -1,0 +1,55 @@
+/* Ustawienie strony, aby footer był zawsze na dole */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Główna treść zajmuje całą dostępną przestrzeń */
+}
+
+/* Stylizacja stopki */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(172, 191, 86, 0.2);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-text {
+    font-size: 1rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-socials a:hover {
+    color: cyan;
+}
