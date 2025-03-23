@@ -1,0 +1,39 @@
+.teacher-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.teacher-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.teacher-info {
+    margin-top: 10px;
+}
+
+.teacher-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.teacher-specialization {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.teacher-description {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0;
+}
