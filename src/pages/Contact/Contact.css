@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1400px; /* Zwiększona szerokość */
+    max-width: 1400px;
     margin: 50px auto;
     padding: 40px;
     background: #f8f8f8;
@@ -12,7 +12,7 @@
 
 /* Sekcja informacji kontaktowych */
 .contact-info {
-    width: 45%; /* Zwiększona szerokość */
+    width: 45%;
     padding: 30px;
 }
 
@@ -44,55 +44,6 @@
 
 .contact-info a:hover {
     text-decoration: underline;
-}
-
-/* Sekcja formularza */
-.contact-form {
-    width: 50%; /* Większa szerokość */
-    padding: 30px;
-}
-
-.contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #333;
-}
-
-.contact-form label {
-    font-weight: bold;
-    display: block;
-    margin: 15px 0 8px;
-    font-size: 1.1rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.1rem;
-}
-
-.contact-form textarea {
-    height: 120px;
-    resize: none;
-}
-
-.contact-form button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background: #0056b3;
 }
 
 /* Responsywność */
