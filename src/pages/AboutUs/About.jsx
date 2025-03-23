@@ -2,29 +2,31 @@ import React from "react";
 import TeacherCard from "../../components/TeacherCard/TeacherCard.jsx";  // Ścieżka do komponentu TeacherCard
 import { Link } from "react-router-dom";  // Do linkowania do strony oferty
 import "./About.css";
+import logo from "../../assets/brighties.png";
+
 
 const teachers = [
     {
         name: "Jan Kowalski",
-        image: "https://example.com/jan-kowalski.jpg",  // Zamień na prawdziwy URL zdjęcia
+        image: logo,  // Zamień na prawdziwy URL zdjęcia
         specialization: "Matematyka",
         description: "Doświadczony nauczyciel matematyki z pasją do nauki."
     },
     {
         name: "Anna Nowak",
-        image: "https://example.com/anna-nowak.jpg",  // Zamień na prawdziwy URL zdjęcia
+        image: logo,  // Zamień na prawdziwy URL zdjęcia
         specialization: "Fizyka",
         description: "Nauczycielka fizyki z wieloletnim stażem, pasjonatka eksperymentów."
     },
     {
         name: "Marek Zieliński",
-        image: "https://example.com/marek-zielinski.jpg",  // Zamień na prawdziwy URL zdjęcia
+        image: logo,  // Zamień na prawdziwy URL zdjęcia
         specialization: "Informatyka",
         description: "Ekspert w dziedzinie IT i programowania. Uwielbia nowe technologie."
     },
     {
         name: "Ewa Wiśniewska",
-        image: "https://example.com/ewa-wisniewska.jpg",  // Zamień na prawdziwy URL zdjęcia
+        image: logo,  // Zamień na prawdziwy URL zdjęcia
         specialization: "Biologia",
         description: "Biolog z zamiłowaniem do badań nad ekosystemami i ochroną środowiska."
     }
