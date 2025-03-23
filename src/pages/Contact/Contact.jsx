@@ -1,33 +1,52 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useState } from "react";
+import { FaPhone, FaEnvelope, FaFacebook } from "react-icons/fa";
+import "./Contact.css";
 
-function ContactPage() {
+export default function Contact() {
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
+        name: "",
+        email: "",
+        message: "",
     });
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Przykładowa logika wysyłania formularza (możesz podpiąć API lub wysłać e-mail)
-        alert('Formularz wysłany!');
+        alert("Formularz wysłany!");
     };
 
     return (
-        <div className="contact-page">
-            <h2>Kontakt</h2>
-            <form onSubmit={handleSubmit} className="contact-form">
-                <div className="form-group">
-                    <label htmlFor="name">Imię:</label>
+        <div className="contact-container">
+            {/* Sekcja informacji kontaktowych */}
+            <div className="contact-info">
+                <h2>Skontaktuj się z nami</h2>
+                <p>
+                    <FaPhone className="icon" /> +48 726 006 123
+                </p>
+                <p>
+                    <FaEnvelope className="icon" /> brighties.pl@gmail.com
+
+                </p>
+                <p>
+                    <FaFacebook className="icon" />{" "}
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61565779600994"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Nasz Facebook
+                    </a>
+                </p>
+            </div>
+
+            {/* Formularz kontaktowy */}
+            <div className="contact-form">
+                <h2>Napisz do nas</h2>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="name">Imię i nazwisko:</label>
                     <input
                         type="text"
                         id="name"
@@ -36,8 +55,7 @@ function ContactPage() {
                         onChange={handleChange}
                         required
                     />
-                </div>
-                <div className="form-group">
+
                     <label htmlFor="email">E-mail:</label>
                     <input
                         type="email"
@@ -47,8 +65,7 @@ function ContactPage() {
                         onChange={handleChange}
                         required
                     />
-                </div>
-                <div className="form-group">
+
                     <label htmlFor="message">Wiadomość:</label>
                     <textarea
                         id="message"
@@ -57,11 +74,10 @@ function ContactPage() {
                         onChange={handleChange}
                         required
                     ></textarea>
-                </div>
-                <button type="submit" className="submit-btn">Wyślij</button>
-            </form>
+
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
         </div>
     );
 }
-
-export default ContactPage;
