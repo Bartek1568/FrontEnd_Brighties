@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";  // Importuj Link z react-router-dom
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 import { FaFacebook } from "react-icons/fa";
 import logo from "../../assets/brighties.png";
@@ -10,7 +10,9 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="container">
-                <img src={logo} alt="Website Logo" className="logo" />
+                <Link to="/" className="logo-link">
+                    <img src={logo} alt="Website Logo" className="logo" />
+                </Link>
 
                 {/* Przycisk hamburger */}
                 <button
