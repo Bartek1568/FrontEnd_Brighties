@@ -20,7 +20,6 @@ main {
 .footer {
     background: #222;
     color: white;
-    text-align: center;
     padding: 20px 0;
     box-shadow: 0 -4px 6px rgba(172, 191, 86, 0.2);
     width: 100%;
@@ -28,28 +27,99 @@ main {
     bottom: 0;
 }
 
+/* Kontener stopki - flexbox dla lepszego układu */
 .footer-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
+/* Sekcja kontaktowa po lewej */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: white;
+}
+
+/* Nagłówek kontaktu */
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Stylizacja linków i tekstu w sekcji kontaktowej */
+.footer-info a, .footer-info p {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+
+/* Środkowa sekcja z tekstem */
 .footer-text {
     font-size: 1rem;
+    text-align: center;
+    align-self: flex-end; /* Przesunięcie na dół */
+    margin-top: auto; /* Zapewnia, że treść jest na dole */
+    flex: 1;
 }
 
-.footer-socials {
-    display: flex;
-    gap: 15px;
-}
-
-.footer-socials a {
+/* Przycisk przewijania na górę po prawej */
+.scroll-top {
+    background: #007bff;
     color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s ease-in-out;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
 }
 
-.footer-socials a:hover {
+.scroll-top:hover {
+    background: #0056b3;
+}
+
+/* Ikony */
+.icon {
+    font-size: 1.3rem;
     color: cyan;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-info {
+        align-items: center;
+    }
+
+    .footer-text {
+        order: 2;
+    }
+
+    .scroll-top {
+        order: 3;
+    }
 }
