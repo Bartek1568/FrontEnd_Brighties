@@ -1,7 +1,7 @@
 import React from "react";
-import "./MainContent.css";
+import "./MainPage.css";
 
-export default function MainContent() {
+export default function MainPage() {
     return (
         <div className="main-content">
             <section className="section">
