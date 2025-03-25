@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { FaPhone, FaEnvelope, FaFacebook } from "react-icons/fa";
 import ContactForm from "../../components/ContactForm/ContactForm.jsx";
-
+import "../../css/Contact.css";
 export default function Contact() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);  // Ustala pozycję scrolla na górę strony
+    }, []);
     return (
         <div className="contact-container">
             {/* Sekcja informacji kontaktowych */}

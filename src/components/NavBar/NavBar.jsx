@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./NavBar.css";
+import "../../css/NavBar.css";
 import { FaFacebook } from "react-icons/fa";
 import logo from "../../assets/brighties.png";
 
