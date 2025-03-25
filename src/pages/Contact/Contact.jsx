@@ -1,7 +1,6 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaFacebook } from "react-icons/fa";
 import ContactForm from "../../components/ContactForm/ContactForm.jsx";
-import "./Contact.css";
 
 export default function Contact() {
     return (
