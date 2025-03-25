@@ -33,5 +33,6 @@ button {
 @media (max-width: 768px) {
   .main-content {
     padding: 10px;
+    margin-top: 120px;
   }
 }
