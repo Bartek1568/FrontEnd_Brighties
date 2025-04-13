@@ -1,12 +1,26 @@
-# React + Vite
+# React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikacja stworzona w technologii React.js. Celem aplikacji jest stworzenie strony wizytówki oraz  zapewnienie interaktywnego interfejsu użytkownika do platformy rezerwacji korepetycji. Aplikacja zawiera różne podstrony, w tym stronę główną, informacje o nas, formularz kontaktowy, ofertę oraz obsługę błędów 404.
 
-Currently, two official plugins are available:
+## Struktura katalogów
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplikacja ma następującą strukturę katalogów:
 
-## Expanding the ESLint configuration
+## Opis podstron
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **MainPage**  
+  Główna strona aplikacji, która wita użytkowników i prezentuje najważniejsze informacje o platformie.  
+
+- **AboutUs**  
+  Podstrona zawierająca informacje o firmie i jej misji.  
+
+- **Contact**  
+  Formularz kontaktowy, który pozwala użytkownikom skontaktować się z firmą.  
+
+- **Offer**  
+  Lista lub opis dostępnych ofert korepetycji.  
+
+- **NoPage**  
+  Strona wyświetlana w przypadku błędu 404, jeśli użytkownik przejdzie do nieistniejącej strony.  
+
+
