@@ -1,4 +1,4 @@
-# React Application
+# Brighties
 
 Aplikacja stworzona w technologii React.js. Celem aplikacji jest stworzenie strony wizytówki oraz  zapewnienie interaktywnego interfejsu użytkownika do platformy rezerwacji korepetycji. Aplikacja zawiera różne podstrony, w tym stronę główną, informacje o nas, formularz kontaktowy, ofertę oraz obsługę błędów 404.
 
