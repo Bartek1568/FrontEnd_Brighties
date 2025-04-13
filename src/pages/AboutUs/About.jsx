@@ -1,9 +1,8 @@
 import React from "react";
 import TeacherCard from "../../components/TeacherCard/TeacherCard.jsx";  // Ścieżka do komponentu TeacherCard
 import { Link } from "react-router-dom";  // Do linkowania do strony oferty
-import "./About.css";
 import logo from "../../assets/brighties.png";
-
+import "../../css/About.css";
 
 const teachers = [
     {

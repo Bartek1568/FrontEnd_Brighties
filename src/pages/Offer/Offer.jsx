@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";  // Do linkowania do strony kontaktu
-import "./Offer.css";
-
+import "../../css/Offer.css";
 export default function Offer() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);  // Ustala pozycję scrolla na górę strony
+    }, []);
     return (
         <div className="offer">
             {/* Pierwsza sekcja - Co oferujemy */}

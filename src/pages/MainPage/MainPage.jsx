@@ -1,9 +1,15 @@
-import React from "react";
-import "./MainPage.css";
+import React, {useEffect} from "react";
+import "../../css/MainPage.css"
+import {Link} from "react-router-dom";
 
 export default function MainPage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);  // Ustala pozycję scrolla na górę strony
+    }, []);
+
     return (
-        <div className="main-content">
+        <div className="main">
             <section className="section">
                 <h1>Witaj na naszej stronie!</h1>
                 <p>
@@ -22,7 +28,9 @@ export default function MainPage() {
             </section>
 
             <section className="section">
-                <button className="cta-button">Skontaktuj się z nami</button>
+                <Link to="/contact">
+                    <button className="cta-button">Skontaktuj się z nami</button>
+                </Link>
             </section>
         </div>
     );

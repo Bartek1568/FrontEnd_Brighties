@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "../../css/Footer.css";
 import { FaFacebook, FaEnvelope, FaPhone, FaArrowUp } from "react-icons/fa";
 
 export default function Footer() {

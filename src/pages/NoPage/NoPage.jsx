@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./NoPage.css";
+import "../../css/NoPage.css"
 
 export default function NoPage() {
     return (

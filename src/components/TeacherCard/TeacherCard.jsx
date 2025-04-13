@@ -1,5 +1,4 @@
 import React from "react";
-import "./TeacherCard.css";
 
 export default function TeacherCard({ teacher }) {
     return (

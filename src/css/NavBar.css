@@ -1,13 +1,13 @@
 /* Stylizacja navbar */
 .navbar {
-  background: #222;
+  background: #333;  /* Zmiana tła na ciemny szary */
   color: white;
   padding: 1rem;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 4px 6px rgba(172, 191, 86, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Delikatny cień */
   z-index: 1000;
 }
 
@@ -64,13 +64,13 @@
   bottom: -5px;
   width: 0;
   height: 2px;
-  background: cyan;
+  background: orange;  /* Kolor podkreślenia na pomarańczowo */
   transform: translateX(-50%);
   transition: transform 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-  color: cyan;
+  color: orange;  /* Kolor tekstu na pomarańczowy przy hover */
 }
 
 .nav-links a:hover::after {
